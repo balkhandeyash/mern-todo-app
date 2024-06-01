@@ -18,7 +18,7 @@ const Signup = () => {
   };
   const submit = async (e) => {
     e.preventDefault();
-    await axios.post('${window.location.origin}/api/v1/register', Inputs).then(
+    await axios.post(`https://mern-todo-app-yrb.vercel.app/api/v1/register`, Inputs).then(
       (response)=>{
         if(response.data.message === "User Already Exists"){
           alert(response.data.message);

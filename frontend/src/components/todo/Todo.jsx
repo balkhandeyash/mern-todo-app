@@ -35,7 +35,7 @@ const Todo = () => {
                 })
                 .then((response) => {
                     console.log(response);
-                })
+                });
                 setInputs({ title: "", body: "" });
                 toast.success("Your Task is added");
             }
